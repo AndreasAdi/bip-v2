@@ -24,17 +24,16 @@
                     <div class="mt-4 swiper mySwiper">
                         <div class="swiper-wrapper">
                             @foreach ($data->image as $item2)
-                                <div class="swiper-slide">
+                                <div class="scale-50 swiper-slide">
                                     <div class="flex justify-center overflow-hidden bg-white border border-stone-400">
-                                        <img class="object-scale-down w-32 h-32 p-2"
-                                            src="{{ asset('storage/' . $item2) }}" />
+                                        <img class="object-scale-down p-2" src="{{ asset('storage/' . $item2) }}" />
                                     </div>
                                 </div>
                             @endforeach
                         </div>
                     </div>
                 </div>
-                <div class="px-6 md:px-0">
+                <div>
                     <h1 class="text-3xl font-semibold">{{ $data->name }}</h1>
                     <div class="mt-3 mb-5">
                         {{-- <!-- Product Tags -->
@@ -47,7 +46,7 @@
                             @endforeach
                         </div> --}}
                         <!-- YouTube Video -->
-                        <div class="mt-5 h-96">
+                        <div class="mt-5 md:h-96">
                             <div style="padding-bottom: 56.25%; position: relative;">
                                 <iframe width="100%" height="100%" src="{{ $data->convertYoutube($data->youtube) }}"
                                     referrerpolicy="no-referrer-when-downgrade"
@@ -65,21 +64,25 @@
             </div>
 
             <!-- Product Description -->
-            <div class="px-4 py-8 mx-auto md:px-12 md:columns-2 gap-x-10">
-                <h2 class="text-2xl font-semibold">Deskripsi Produk</h2>
-                <div class="mt-4 prose">
-                    {!! $data->description !!}
+            <div class="flex flex-col md:px-12">
+                <div>
+                    <h2 class="px-4 mt-5 mb-10 text-2xl font-semibold text-center">Deskripsi Produk</h2>
+                </div>
+                <div class="px-4 mx-auto md:columns-2 gap-x-10">
+                    <div class="mt-4 prose">
+                        {!! $data->description !!}
+                    </div>
                 </div>
             </div>
 
             <!-- Similar Products -->
-            <div class="px-4 mb-10 md:px-12">
+            <div class="px-4 mt-5 mb-10 md:px-12">
                 <h2 class="text-xl font-semibold">Produk Serupa</h2>
                 <div class="grid grid-cols-1 gap-6 mt-4 md:grid-cols-4 lg:grid-cols-5">
                     @foreach ($similarProduct as $item)
                         <div class="overflow-hidden bg-white border rounded-lg shadow-lg">
                             <img class="object-scale-down object-center w-full h-56 p-5 md:p-10"
-                                src="{{ $similarProductImages[$loop->index] }}" alt="Product Image">
+                                src="{{ asset('storage/' . $item->image[0]) }}" alt="Product Image">
                             <div class="px-4 py-4">
                                 <h2 class="font-semibold text-gray-800 text-md line-clamp-1">{{ $item->name }}</h2>
                                 <div class="flex items-center justify-between w-full mt-4 text-center">
