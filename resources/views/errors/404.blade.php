@@ -1,6 +1,6 @@
 <x-main>
-    <div class="flex items-center justify-center min-h-screen bg-gray-950">
-        <div class="p-6 overflow-hidden rounded bg-gray-950">
+    <div class="flex items-center justify-center min-h-screen bg-gray-900">
+        <div class="p-6 overflow-hidden bg-gray-900 rounded">
             <div class="flex items-center justify-center">
                 <img class="w-64 h-64 rounded-md" src="{{ asset('images/404.png') }}" alt="Broken robot">
             </div>
