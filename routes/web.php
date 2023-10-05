@@ -32,7 +32,9 @@ Route::get('/it', [MainController::class, "itIndex"]);
 Route::get('/it/list/{id}', [MainController::class, "itList"]);
 
 Route::get('/office', [MainController::class, "officeIndex"]);
+Route::get('/office/list/{id}', [MainController::class, "officeList"]);
 
 Route::get('/machine', [MainController::class, "machineIndex"]);
+Route::get('/machine/list/{id}', [MainController::class, "machineList"]);
 
 Route::get('/product/{id}', [MainController::class, "productDetail"]);
