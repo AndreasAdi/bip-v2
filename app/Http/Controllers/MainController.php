@@ -37,32 +37,36 @@ class MainController extends Controller
     {
         $category = "Banking Equipment";
         $pdf = "/pdf/banking.pdf";
+        $code = "banking";
         $subCategories = Subcategory::where("category_id", 3)->get();
-        return view("product", compact("subCategories", "category", "pdf"));
+        return view("product", compact("subCategories", "category", "pdf", "code"));
     }
 
     function itIndex()
     {
         $category = "IT Equipment";
         $pdf = "/pdf/it.pdf";
+        $code = "it";
         $subCategories = Subcategory::where("category_id", 1)->get();
-        return view("product", compact("subCategories", "category", "pdf"));
+        return view("product", compact("subCategories", "category", "pdf", "code"));
     }
 
     function officeIndex()
     {
         $category = "Office Equipment";
         $pdf = "/pdf/office.pdf";
+        $code = "office";
         $subCategories = Subcategory::where("category_id", 2)->get();
-        return view("product", compact("subCategories", "category", "pdf"));
+        return view("product", compact("subCategories", "category", "pdf", "code"));
     }
 
     function machineIndex()
     {
         $category = "Machine Tools";
         $pdf = "/pdf/machine.pdf";
+        $code = "machine";
         $subCategories = Subcategory::where("category_id", 4)->get();
-        return view("product", compact("subCategories", "category", "pdf"));
+        return view("product", compact("subCategories", "category", "pdf", "code"));
     }
 
     function bankingList($id)
@@ -113,10 +117,10 @@ class MainController extends Controller
     {
         $data = Product::where("id", $id)->first();
 
-        $subCategory = $data->subcategory;
-        $subCategory = json_decode($subCategory);
+        $subCategory = $data->subcategory_id;
+        // $subCategory = json_decode($subCategory);
 
-        $similarProduct = Product::where("category_id", $data->category)
+        $similarProduct = Product::where("category_id", $data->category_id)
             ->where("id", "!=", $data->id)
             ->whereJsonContains("subcategory_id", $subCategory)
             ->paginate(5);

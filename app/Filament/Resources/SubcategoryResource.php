@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\SubcategoryResource\Pages;
 use App\Filament\Resources\SubcategoryResource\RelationManagers;
+use App\Models\Category;
 use App\Models\Subcategory;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -36,9 +37,11 @@ class SubcategoryResource extends Resource
                 TextInput::make('name')
                     ->required()
                     ->maxLength(255),
-                TextInput::make('category_id')
-                    ->required()
-                    ->maxLength(255),
+                Select::make('category_id')
+                    ->label('Category')
+                    ->options(Category::all()->pluck('name', 'id'))
+                    ->native(false)
+                    ->required(),
                 FileUpload::make('image')
                     ->image()
                     ->imageEditor()
@@ -59,9 +62,9 @@ class SubcategoryResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name')
+                TextColumn::make('name')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('category_id')
+                TextColumn::make('category.name', 'Category')
                     ->searchable(),
             ])
             ->filters([
