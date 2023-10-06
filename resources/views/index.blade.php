@@ -200,34 +200,34 @@
                 <div class="w-1/5 h-2 rounded-lg bg-bip-blue-950"></div>
             </div>
         </div>
-        <div class="flex flex-wrap items-center justify-center gap-5 mask">
-            <img class="h-24 p-5 border shadow-md" src="{{ asset('images/logo/bri.webp') }}" alt="bri">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/btn2.webp') }}" alt="btn">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/bni.webp') }}" alt="bri">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/mega.webp') }}" alt="mega">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/permata.webp') }}" alt="bri">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/uob.webp') }}" alt="uob">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/qnb.webp') }}" alt="qnb">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/bca.webp') }}" alt="bca">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/bankdki.webp') }}" alt="bank dki">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/kominfo.webp') }}" alt="kominfo">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/trans7.webp') }}" alt="trans7">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/transtv.webp') }}" alt="transtv">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/telkom.webp') }}" alt="telkom">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/kpu.webp') }}" alt=" kpu">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/bankbengkulu.png') }}"
+        <div class="grid items-center justify-center grid-cols-3 gap-5 md:flex md:flex-wrap mask" data-aos="fade-up">
+            <img class="p-5 border shadow-md md:md:h-24" src="{{ asset('images/logo/bri.webp') }}" alt="bri">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/btn2.webp') }}" alt="btn">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bni.webp') }}" alt="bri">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/mega.webp') }}" alt="mega">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/permata.webp') }}" alt="bri">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/uob.webp') }}" alt="uob">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/qnb.webp') }}" alt="qnb">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bca.webp') }}" alt="bca">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bankdki.webp') }}" alt="bank dki">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/kominfo.webp') }}" alt="kominfo">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/trans7.webp') }}" alt="trans7">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/transtv.webp') }}" alt="transtv">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/telkom.webp') }}" alt="telkom">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/kpu.webp') }}" alt=" kpu">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bankbengkulu.png') }}"
                 alt=" bank bengkulu">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/bankbanten.png') }}"
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bankbanten.png') }}"
                 alt=" bank banten">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/bankjateng.png') }}"
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bankjateng.png') }}"
                 alt=" bank jateng">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/ecatalogue.png') }}"
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/ecatalogue.png') }}"
                 alt="ecatalogue">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/brin.png') }}" alt="brin">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/bi.png') }}" alt="bi">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/polri.png') }}" alt="polri">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/bssn.png') }}" alt="bssn">
-            <img class="h-24 p-5 border shadow-md " src="{{ asset('images/logo/pins.png') }}" alt="pins">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/brin.png') }}" alt="brin">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bi.png') }}" alt="bi">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/polri.png') }}" alt="polri">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bssn.png') }}" alt="bssn">
+            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/pins.png') }}" alt="pins">
         </div>
     </div>
     <!--END SECTION 3-->
