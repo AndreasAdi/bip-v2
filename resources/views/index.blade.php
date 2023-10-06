@@ -190,7 +190,7 @@
     <!--END SECTION 2-->
 
     <!--SECTION 3-->
-    <div class="px-5 py-20" id="section3">
+    <div class="flex flex-col items-center justify-center px-5 py-20" id="section3">
         <div data-aos="fade-up">
             <div class="flex flex-col items-center justify-center mb-10 space-y-2">
                 <div class="text-xl font-bold uppercase text-bip-blue-950">Client Kami</div>
@@ -200,34 +200,54 @@
                 <div class="w-1/5 h-2 rounded-lg bg-bip-blue-950"></div>
             </div>
         </div>
-        <div class="grid items-center justify-center grid-cols-3 gap-5 md:flex md:flex-wrap mask" data-aos="fade-up">
-            <img class="p-5 border shadow-md md:md:h-24" src="{{ asset('images/logo/bri.webp') }}" alt="bri">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/btn2.webp') }}" alt="btn">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bni.webp') }}" alt="bri">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/mega.webp') }}" alt="mega">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/permata.webp') }}" alt="bri">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/uob.webp') }}" alt="uob">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/qnb.webp') }}" alt="qnb">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bca.webp') }}" alt="bca">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bankdki.webp') }}" alt="bank dki">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/kominfo.webp') }}" alt="kominfo">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/trans7.webp') }}" alt="trans7">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/transtv.webp') }}" alt="transtv">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/telkom.webp') }}" alt="telkom">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/kpu.webp') }}" alt=" kpu">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bankbengkulu.png') }}"
-                alt=" bank bengkulu">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bankbanten.png') }}"
-                alt=" bank banten">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bankjateng.png') }}"
-                alt=" bank jateng">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/ecatalogue.png') }}"
-                alt="ecatalogue">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/brin.png') }}" alt="brin">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bi.png') }}" alt="bi">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/polri.png') }}" alt="polri">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/bssn.png') }}" alt="bssn">
-            <img class="p-5 border shadow-md md:h-24 " src="{{ asset('images/logo/pins.png') }}" alt="pins">
+        <div class="flex flex-wrap items-center justify-center max-w-6xl gap-5 place-content-center place-items-center"
+            data-aos="fade-up">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24"
+                src="{{ asset('images/logo/bri.webp') }}" alt="bri">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/btn2.webp') }}" alt="btn">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/bni.webp') }}" alt="bri">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/mega.webp') }}" alt="mega">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/permata.webp') }}" alt="bri">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/uob.webp') }}" alt="uob">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/qnb.webp') }}" alt="qnb">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/bca.webp') }}" alt="bca">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/bankdki.webp') }}" alt="bank dki">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24"
+                src="{{ asset('images/logo/kominfo.webp') }}" alt="kominfo">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/trans7.webp') }}" alt="trans7">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/transtv.webp') }}" alt="transtv">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/telkom.webp') }}" alt="telkom">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/kpu.webp') }}" alt=" kpu">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/bankbengkulu.png') }}" alt=" bank bengkulu">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/bankbanten.png') }}" alt=" bank banten">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/bankjateng.png') }}" alt=" bank jateng">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/ecatalogue.png') }}" alt="ecatalogue">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/brin.png') }}" alt="brin">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/bi.png') }}" alt="bi">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/polri.png') }}" alt="polri">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/bssn.png') }}" alt="bssn">
+            <img class="object-scale-down w-32 h-16 p-3 border shadow-md md:p-5 md:h-24 "
+                src="{{ asset('images/logo/pins.png') }}" alt="pins">
         </div>
     </div>
     <!--END SECTION 3-->

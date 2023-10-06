@@ -19,7 +19,7 @@
                     <div class="overflow-hidden bg-white border rounded-lg shadow-lg">
                         <img class="object-scale-down object-center w-full h-56 p-10"
                             src="{{ '/storage/' . $item->image[0] }}" alt="Product Image">
-                        <div class="px-4 py-4">
+                        <div class="md:px-4 md:py-4">
                             <h2 class="text-lg font-semibold text-gray-800 line-clamp-1">{{ $item->name }}</h2>
                             <div class="flex items-center justify-between w-full mt-4 text-center">
                                 <a href="/product/{{ $item->id }}"

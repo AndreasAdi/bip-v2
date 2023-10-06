@@ -1,16 +1,17 @@
 <x-main>
     <x-navbar-solid />
-    <main class="py-8 ">
+    <main class="lg:py-8 ">
         <div class="container p-4 mx-auto">
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12 lg:px-12">
+                <h1 class="text-2xl font-semibold md:hidden lg:text-3xl">{{ $data->name }}</h1>
                 <div>
                     <!-- Image Slider -->
                     <div class="swiper mySwiper2">
                         <div class="swiper-wrapper">
                             @foreach ($data->image as $item)
                                 <div class="swiper-slide">
-                                    <div class="overflow-hidden border rounded-lg shadow-md">
-                                        <img class="object-contain w-full h-[400px] md:h-[500px] lg:h-[600px]"
+                                    <div class="overflow-hidden shadow-md">
+                                        <img class="object-contain w-full h-[400px] md:h-[400px] lg:h-[400px]"
                                             src="{{ asset('storage/' . $item) }}" alt="Product Image">
                                     </div>
                                 </div>
@@ -34,7 +35,7 @@
                     </div>
                 </div>
                 <div>
-                    <h1 class="text-3xl font-semibold">{{ $data->name }}</h1>
+                    <h1 class="hidden text-2xl font-semibold lg:block lg:text-3xl">{{ $data->name }}</h1>
                     <div class="mt-3 mb-5">
                         {{-- <!-- Product Tags -->
                         <div class="mt-2 mb-4 space-x-2">
@@ -46,7 +47,7 @@
                             @endforeach
                         </div> --}}
                         <!-- YouTube Video -->
-                        <div class="mt-5 md:h-96">
+                        <div class="mt-5">
                             <div style="padding-bottom: 56.25%; position: relative;">
                                 <iframe width="100%" height="100%" src="{{ $data->convertYoutube($data->youtube) }}"
                                     referrerpolicy="no-referrer-when-downgrade"
@@ -64,12 +65,14 @@
             </div>
 
             <!-- Product Description -->
-            <div class="flex flex-col md:px-12">
+            <div class="flex flex-col lg:px-12">
                 <div>
-                    <h2 class="px-4 mt-5 mb-10 text-2xl font-semibold text-center">Deskripsi Produk</h2>
+                    <h2 class="px-4 my-5 text-xl font-semibold text-center lg:mt-5 lg:mb-10 lg:text-2xl">Deskripsi
+                        Produk
+                    </h2>
                 </div>
-                <div class="px-4 mx-auto md:columns-2 gap-x-10">
-                    <div class="mt-4 prose">
+                <div class="px-4 mx-auto md:px-0 md:columns-2 gap-x-10">
+                    <div class="mt-4 prose prose-headings:text-lg">
                         {!! $data->description !!}
                     </div>
                 </div>
@@ -78,10 +81,10 @@
             <!-- Similar Products -->
             <div class="px-4 mt-5 mb-10 md:px-12">
                 <h2 class="text-xl font-semibold">Produk Serupa</h2>
-                <div class="grid grid-cols-1 gap-6 mt-4 md:grid-cols-4 lg:grid-cols-5">
+                <div class="grid grid-cols-1 gap-6 mt-4 md:grid-cols-2 lg:grid-cols-4">
                     @foreach ($similarProduct as $item)
                         <div class="overflow-hidden bg-white border rounded-lg shadow-lg">
-                            <img class="object-scale-down object-center w-full h-56 p-5 md:p-10"
+                            <img class="object-scale-down object-center w-full h-56 p-5 lg:p-10"
                                 src="{{ asset('storage/' . $item->image[0]) }}" alt="Product Image">
                             <div class="px-4 py-4">
                                 <h2 class="font-semibold text-gray-800 text-md line-clamp-1">{{ $item->name }}</h2>
